@@ -222,9 +222,9 @@ void setup(){
     
 //rtc.adjust(DateTime(2025, 9, 11, 11, 48, 10)); //cek manual untuk cek waktu sholat
 
-  
-    pt.setCalculationMethod(ISNA);
-    pt.setAdjustments(-18,0,3,-3,6,12);
+  pt.setCalculationMethod(ISNA);   // Sudah kamu modif: 20° / 18° / Syafi’i
+  pt.setAdjustments(0,0,0,0,0,0);  // TANPA offset
+
 
     Timer1.initialize(5000);
     Timer1.attachInterrupt(ScanDMD);
